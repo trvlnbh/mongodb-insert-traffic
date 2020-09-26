@@ -19,7 +19,9 @@ $ mtf insert --type=<case> --mongodb-uri="<MongoDB Connection URI>"
 
 
 
-#### CoordData (case 1)
+
+
+### CoordData (case 1)
 
 Collection Sharding
 
@@ -28,13 +30,13 @@ Collection Sharding
 
 ```json
 {
-    "timestamp": Timestamp,
-    "date": Date,
-    "first_name": FirstName,
-    "last_name": LastName,
+    "timestamp": 0000000000000,
+    "date": "Date",
+    "first_name": "FirstName",
+    "last_name": "LastName",
     "coordinate": {
-        "latitude": Latitude,
-        "longitude": Longitude
+        "latitude": 000.00000000,
+        "longitude": 000.00000000
     }
 }
 ```
@@ -50,7 +52,9 @@ Collection Sharding
 
 
 
-#### FavorColorData (case 2)
+
+
+### FavorColorData (case 2)
 
 Collection Sharding
 
@@ -59,14 +63,14 @@ Collection Sharding
 
 ```json
 {
-    "timestamp": Timestamp,
-    "date": Date,
+    "timestamp": 0000000000000,
+    "date": "Date",
     "personal_info": {
-        "city": City,
-        "last_name": LastName,
-        "gender": Gender
+        "city": "City",
+        "last_name": "LastName",
+        "gender": "Gender"
     },
-    "color": Color
+    "color": "Color"
 }
 ```
 
@@ -81,17 +85,19 @@ Collection Sharding
 
 
 
-#### EmailData (case 3)
+
+
+### EmailData (case 3)
 
 No Sharding
 
 ```json
 {
-    "timestamp": Timestamp,
-    "date": Date,
-    "user_name": UserName,
-    "email": Email,
-    "text": Text
+    "timestamp": 0000000000000,
+    "date": "Date",
+    "user_name": "UserName",
+    "email": "Email",
+    "text": "Text"
 }
 ```
 
@@ -102,6 +108,8 @@ No Sharding
 | user_name | string | fake.UserName()       |
 | email     | string | fake.EmailAddress()   |
 | text      | string | fake.Sentence()       |
+
+
 
 
 
